@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "360758970860",
+    "firebase_url": "https://english-quiz-app.firebaseio.com",
+    "project_id": "english-quiz-app",
+    "storage_bucket": "english-quiz-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360758970860:android:94441b1c6e8f2bf5",
+        "android_client_info": {
+          "package_name": "com.example.windows81gamer.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360758970860-k8gnjrj3r71dnlbutlals61k07m5ng4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMfMnuGaCFqkjOsACPUkKWX3GkFehIo0c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
