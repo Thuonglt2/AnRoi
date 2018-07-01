@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name = "Cau_hoi_1">Câu 1:Hoi gì hỏi lắm</string>
+    <string name = "dap_an_a">A: Thích thì hỏi</string>
+    <string name = "dap_an_b">B: Thích thì hỏi</string>
+    <string name = "dap_an_c">C: Thích thì hỏi</string>
+</resources>

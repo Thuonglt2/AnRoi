@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cau_hoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Cau_hoi_1"></TextView>
+
+
+    <TextView
+        android:id="@+id/dap_an_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dap_an_a"></TextView>
+    <TextView
+        android:id="@+id/dap_an_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dap_an_b"></TextView>
+
+    <TextView
+        android:id="@+id/dap_an_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dap_an_c"   />
+
+</LinearLayout>
