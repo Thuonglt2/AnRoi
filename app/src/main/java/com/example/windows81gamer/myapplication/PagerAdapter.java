@@ -1,52 +1,34 @@
 package com.example.windows81gamer.myapplication;
 
-import android.support.annotation.Nullable;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.util.Log;
+
+import java.util.List;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
-    public PagerAdapter(FragmentManager fm) {
+    public List<Question> questionList;
+
+    public PagerAdapter(FragmentManager fm, List<Question> questions) {
         super(fm);
+        questionList = questions;
     }
 
     @Override
-    public Fragment getItem(int position) {
-        Fragment frag=null;
-        switch (position){
-            case 0:
-                frag=new Fragment1();
-                break;
-            case 1:
-                frag=new Fragment3();
-                break;
-            case 2:
-                frag=new Fragment22();
-                break;
-        }
-        return frag;
+    public Fragment getItem(int pos) {
+        QuestionFragment questionFragment = new QuestionFragment();
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("QUESTION", questionList.get(pos));
+        questionFragment.setArguments(bundle);
+
+        return questionFragment;
     }
 
     @Override
     public int getCount() {
-        return 3;
-    }
+       return questionList.size();
 
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        String title = "";
-        switch (position) {
-            case 0:
-                title = "Cau hoi 1";
-                break;
-            case 1:
-                title = "Cau hoi 2";
-                break;
-            case 2:
-                title = "Cau hoi 3";
-                break;
-        }
-        return title;
     }
 }
